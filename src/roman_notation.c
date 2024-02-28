@@ -26,7 +26,7 @@ void roman_notation(char *romnum) {
     for (int i = len - 1; i >= 0; i--) {
         int j;
         for (j = 0; j < ROM_S; ++j)
-            if (roman[j] == romnum[i]) break;
+            if (roman[j] == romnum[i]) break; // 123
 
         if (arabic[j] < t) {
             t = arabic[j];
